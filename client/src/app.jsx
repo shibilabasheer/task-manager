@@ -8,7 +8,7 @@ const isAuthed = () => !!localStorage.getItem("token");
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={isAuthed() ? <Navigate to="/dashboard" /> : <Navigate to="/login" />} />
+      <Route path="/" element={isAuthed() ? <Navigate to="/login" /> : <Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/task" element={isAuthed() ? <Task /> : <Navigate to="/login" />} />
