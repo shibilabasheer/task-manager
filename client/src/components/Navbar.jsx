@@ -11,7 +11,7 @@ export default function AppNavbar({ profile }) {
     <Navbar bg="info" expand="lg" className="mb-3 border-bottom">
       <div><img src="logo.png" alt="Logo" height="60" /></div>
       <Container>
-        <Navbar.Brand href="/dashboard" className="text-uppercase">Personal Task Manager</Navbar.Brand>
+        <Navbar.Brand href="/task" className="text-uppercase">Personal Task Manager</Navbar.Brand>
         <Navbar.Toggle aria-controls="crm-nav" />
         <Navbar.Collapse id="crm-nav">
           <Nav className="me-auto">
